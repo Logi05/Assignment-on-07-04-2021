@@ -6,10 +6,10 @@ import java.util.function.BiPredicate;
 public class Test12 {
 	public static void main(String[] args) {
 		ArrayList<Product> list = new ArrayList<Product>();
-		list.add(new Product(101, 6, 20, 10));
-		list.add(new Product(103, 5, 70, 78));
-		list.add(new Product(102, 3, 54, 34));
-		list.add(new Product(104, 6, 21, 13));
+		list.add(new Product(101, 6, 20, 25));
+		list.add(new Product(103, 5, 70, 60));
+		list.add(new Product(102, 3, 51, 30));
+		list.add(new Product(104, 6, 12, 13));
 		BiPredicate<Integer, Integer> bp1 = (lase, socks) -> ((lase + socks) >= 50);
 		BiPredicate<Integer, Integer> bp2 = (lase, socks) -> ((lase + socks) <= 50);
 		for (Product p : list) {

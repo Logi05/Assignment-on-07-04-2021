@@ -7,14 +7,12 @@ public class Test {
 	public static void main(String[] args) {
 		ArrayList<Student> al = new ArrayList<Student>();
 		al.add(new Student(101, "Anu", 21));
-		al.add(new Student(103, "ram", 13));
-		al.add(new Student(102, "karthic", 18));
-		al.add(new Student(105, "pram", 24));
-		al.add(new Student(104, "devi", 15));
+		al.add(new Student(103, "Ramya", 13));
+		al.add(new Student(102, "Logi", 18));
+		al.add(new Student(105, "priya", 24));
+		al.add(new Student(104, "Gayu", 15));
 		Predicate<Student> p1 = i -> (i.age >= 18);
-		// System.out.println("Allowed to watch movie");
 		Predicate<Student> p2 = e -> (e.age < 18);
-		// System.out.println("NotAllowed to watch movie");
 		for (Student s : al) {
 			if (p1.test(s)) {
 
